@@ -152,6 +152,10 @@ State SKKState::KanaInput(const Event& event) {
 	    }
 	}
 
+	if(param.IsStickyKey()) {
+	    return State::Transition(&SKKState::KanaEntry);
+	}
+
 	if(param.IsUpperCases()) {
 	    return State::Forward(&SKKState::KanaEntry);
 	}

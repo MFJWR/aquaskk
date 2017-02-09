@@ -642,3 +642,15 @@ ctrl::/,sel=蝙蝠        mode=J,marked=▽こうもり
 ctrl::g                 mode=J,fixed=蝙蝠
 ctrl::/,sel=蝙蝠        mode=J,marked=▽こうもり
 ctrl::m                 mode=J,fixed=こうもり
+
+# sticky shift
+# ----------------------------------------------------------------------
+;                       mode=J,marked=▽
+a                       mode=J,marked=▽あ
+;                       mode=J,marked=▽あ*
+r                       mode=J,marked=▽あ*r
+i                       mode=J,marked=▼有り
+ctrl::m                 mode=J,fixed=有り
+ctrl::j                 mode=J
+;                       mode=J,marked=▽
+;                       mode=J,fixed=；
