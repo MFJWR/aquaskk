@@ -69,6 +69,7 @@ public:
 
     	    // level 3 (sub of LatinInput)
     	    State Ascii(const Event& event);
+            State Sticky(const Event& event);
     	    State Jisx0208Latin(const Event& event);
 
     // level 1

@@ -77,6 +77,7 @@ void SKKState::ToString(const Handler handler, const Event& event, std::string& 
 	DEFINE_State(SelectCandidate),
 	DEFINE_State(EntryRemove),
 	DEFINE_State(RecursiveRegister),
+    DEFINE_State(Sticky),
 #undef DEFINE_State
 	{ 0, 0x00 }
     };

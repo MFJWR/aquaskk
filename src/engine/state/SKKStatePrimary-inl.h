@@ -116,7 +116,7 @@ State SKKState::Primary(const Event& event) {
             return 0;
         }
     }
-    
+
     return &SKKState::TopState;
 }
 
@@ -301,6 +301,11 @@ State SKKState::Ascii(const Event& event) {
     }
 
     return &SKKState::LatinInput;
+}
+
+State SKKState::Sticky(const Event& event) {
+    SKKEvent param(event.Param());
+
 }
 
 // ======================================================================
